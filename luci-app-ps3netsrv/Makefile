@@ -10,7 +10,7 @@ LUCI_TITLE:=Luci for PS3NETSRV
 LUCI_DEPENDS:=+ps3netsrv
 LUCI_PKGARCH:=all
 PKG_VERSION:=1
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 include ../../luci.mk
 
