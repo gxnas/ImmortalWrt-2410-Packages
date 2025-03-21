@@ -31,10 +31,6 @@ jobs:
           # 添加认证信息到远程URL
           git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
           
-          status=$(git status -sb)
-          if git diff --quiet; then
-              echo "插件无更新，无需提交。"
-          else
           Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
           git add .
           git commit -m "${Emoji[$[$RANDOM % ${#Emoji[@]}]]} Sync $(date +%Y-%m-%d" "%H:%M:%S)"
@@ -47,7 +43,6 @@ jobs:
           git add .
           git commit -m "${Emoji[$[$RANDOM % ${#Emoji[@]}]]} Sync $(date +%Y-%m-%d" "%H:%M:%S)"
           git push origin HEAD:main -f
-          fi
 
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
