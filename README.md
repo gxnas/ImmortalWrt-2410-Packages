@@ -1,2 +1,3 @@
-# luci-app-onliner
-openwrt在线设备查看luci-app-onliner，汉化优化版，去除了带宽监控，官方23.05.3编译可用
+####  [OpenWrt-ImmortalWrt项目](https://github.com/gxnas/OpenWrt-ImmortalWrt) 的自用插件库
+
+*  常用OpenWrt软件包源码合集，每天定时同步上游更新！
