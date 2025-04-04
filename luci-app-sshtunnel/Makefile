@@ -9,7 +9,7 @@ PKG_LICENSE:=Apache-2.0
 PKG_MAINTAINER:=Sergey Ponomarev <stokito@gmail.com>
 LUCI_DEPENDS:=+luci-base +sshtunnel
 PKG_VERSION:=1.1.0
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 include ../../luci.mk
 
